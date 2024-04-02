@@ -150,6 +150,7 @@ By comparing ride durations, we can understand the distinct behaviors of casual 
 
 
 **Ride Duration Analysis:**
+
 **Casual Riders:** Interestingly, casual riders take significantly longer trips compared to members, with an average journey length roughly twice that of members. This duration, however, varies throughout the year, week, and day. Casual riders embark on their longest rides during weekends, spring, and summer months, and between 10 am and 2 pm. Conversely, their commutes during weekdays (particularly between 5-8 am) tend to be much shorter.
 
 **Members:** In contrast, members exhibit consistent ride durations regardless of season, weekday/weekend, or time of day. Their trips are typically shorter in comparison to casual riders.
