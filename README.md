@@ -2,7 +2,7 @@
 
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/professional-certificates/google-data-analytics?)
 
-**Background**
+# **Background**
 Cyclistic
 Cyclistic, a bike-share program operating with over 5,800 bicycles and 600 docking stations, distinguishes itself by providing a variety of bike options, including reclining bikes, hand tricycles, and cargo bikes, catering to individuals with disabilities and those who prefer alternative bike designs. While the majority of users opt for traditional bikes, approximately 8% utilize assistive options. Cyclistic's user base primarily comprises leisure riders, although roughly 30% use the service for daily commutes.
 
@@ -15,7 +15,7 @@ Moreno has outlined a clear objective: Develop marketing strategies focused on t
 **Scenario**
 As a junior data analyst within Cyclistic's marketing team, my role involves assisting in the analysis of user behavior to inform the development of a new marketing strategy aimed at converting casual riders into annual members. Our recommendations must be supported by compelling data insights and professional data visualizations to secure executive approval.
 
-**Ask**
+# **Ask**
 
 **Business Task**
 Devise marketing strategies to convert casual riders to members.
@@ -28,7 +28,7 @@ Three questions will guide the future marketing program:
    
 Moreno has assigned me the first question to answer: How do annual members and casual riders use Cyclistic bikes differently?
 
-**Prepare**
+# **Prepare**
 **Data Source**
 
 I will use Cyclistic’s historical trip data to analyze and identify trends from Jan 2023 to Dec 2023 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). The data has been made available by Motivate International Inc under this [license](https://divvybikes.com/data-license-agreement).
@@ -37,7 +37,7 @@ This is public data that can be used to explore how different customer types are
 **Data Organization**
 There are 12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
 
-**Process**
+# **Process**
 
 **BigQuery** is used to combine the various datasets into one dataset and clean it.
 
@@ -49,7 +49,7 @@ A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inabi
 SQL Query: [Data Combining](https://github.com/RinDataz/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/Data%20Combining.sql)
 12 csv files are uploaded as tables in the dataset 'GDA. Another table named `GDA.2023_combined_data` is created, containing 5719877 rows of data for the entire year.
 
-**Data Exploration:**
+# **Data Exploration:**
 
 SQL Query:[Data Exploration](https://github.com/RinDataz/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/Data%20Exploration.sql) 
 
@@ -96,7 +96,7 @@ There are no duplicate rows in the data.
 
 11.	Columns that need to be removed are start_station_id and end_station_id as they do not add value to analysis of our current problem. 
 
-**Data Cleaning**
+# **Data Cleaning**
 
 SQL Query: [Data Cleaning](https://github.com/RinDataz/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/Data%20Cleaning%20.sql)
 
@@ -106,7 +106,7 @@ SQL Query: [Data Cleaning](https://github.com/RinDataz/Google-Data-Analytics-Cap
 
 3.	Trips with unrealistic durations (less than a minute or longer than a day) were excluded as outliers. This step resulted in the removal of 1,476,445 rows.
 
-**Analyze and Share**
+# **Analyze and Share**
 **Data Visualization:** [Tableau](https://prod-uk-a.online.tableau.com/#/site/underblack187ef51dad00a/workbooks/822971?:origin=card_share_link)
 
 Having thoroughly cleaned and organized the data, we're ready to dive into the analysis. By querying relevant datasets and visualizing them using Tableau, we can answer a key question:_ How does usage of Cyclistic bikes differ between annual members and casual riders?_
@@ -156,7 +156,7 @@ By comparing ride durations, we can understand the distinct behaviors of casual 
 **Members:** In contrast, members exhibit consistent ride durations regardless of season, weekday/weekend, or time of day. Their trips are typically shorter in comparison to casual riders.
 
 
-**Summary:
+# **Summary**:
 Usage Patterns**
 
 **Casual Riders:** Favor riding throughout the day, with peak usage on weekends during spring and summer. These rides are typically for leisure activities and tend to be twice as long as member rides but occur less frequently.
@@ -164,7 +164,7 @@ Usage Patterns**
 
 **Members:** Primarily use bikes for commuting on weekdays, with peak activity during morning and evening commutes (around 8 am and 5 pm) in spring and summer. Members take more frequent rides, but their trip durations are roughly half that of casual riders.
 
-**Act**
+# **Act**
 
 Understanding casual riders is key to attracting them as members. By analyzing the differences between casual and member riders, we can develop targeted marketing strategies to convert them.
 **Here are some recommendations:**
